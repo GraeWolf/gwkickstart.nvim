@@ -14,6 +14,15 @@ return { -- Highlight, edit, and navigate code
       --  the list of additional_vim_regex_highlighting and disabled languages for indent.
       additional_vim_regex_highlighting = { 'ruby' },
     },
+    incremental_selection = {
+      enable = true,
+      keymaps = {
+        init_selection = '<Enter>',
+        node_incremental = '<Enter>',
+        scope_incremental = false,
+        node_decremental = false,
+      },
+    },
     indent = { enable = true, disable = { 'ruby' } },
   },
   -- There are additional nvim-treesitter modules that you can use to interact
